@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Page</title>
+    <link rel="stylesheet" href="home.css"> 
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Shop Free</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="img 1.jpg" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="anklet.jpg" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="pendent.jpg" alt="Slide 3">
+        </div>
+        <!-- Navigation for carousel -->
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="product-container">
+            <!-- Product Item -->
+            <div class="product-item">
+                <img src="https://th.bing.com/th/id/OIP.5mPlhPszGSviz7-ppriFKAAAAA?rs=1&pid=ImgDetMain" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/originals/1a/58/ea/1a58ea17032ebd3286068771d482718f.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://media.glamourmagazine.co.uk/photos/61f27a5f9355c7bfb389e038/16:9/w_2560%2Cc_limit/RINGS_270122_stephaniegottlieb_SF.jpg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://th.bing.com/th/id/OIP.5mPlhPszGSviz7-ppriFKAAAAA?rs=1&pid=ImgDetMain" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/originals/2e/8c/a9/2e8ca92e53cd8c7f6ffeac4509319a39.jpg" alt="Product 5">
+                <h2>Product 5</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw4628015c/images/hi-res/50D3B41LYABA02_1.jpg" alt="Product 6">
+                <h2>Product 6</h2>
+                <p>$29.99</p>
+                <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/originals/2e/8c/a9/2e8ca92e53cd8c7f6ffeac4509319a39.jpg" alt="Product 7">
+                <h2>Product 7</h2>
+                <p>$24.99</p>
+                <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://th.bing.com/th/id/OIP.5mPlhPszGSviz7-ppriFKAAAAA?rs=1&pid=ImgDetMain" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/originals/1a/58/ea/1a58ea17032ebd3286068771d482718f.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://media.glamourmagazine.co.uk/photos/61f27a5f9355c7bfb389e038/16:9/w_2560%2Cc_limit/RINGS_270122_stephaniegottlieb_SF.jpg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://th.bing.com/th/id/OIP.5mPlhPszGSviz7-ppriFKAAAAA?rs=1&pid=ImgDetMain" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/originals/2e/8c/a9/2e8ca92e53cd8c7f6ffeac4509319a39.jpg" alt="Product 5">
+                <h2>Product 5</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <!-- More products... -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="prev-page" onclick="changePage(-1)">❮ Previous</button>
+            <button class="next-page" onclick="changePage(1)">Next ❯</button>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="home.js"></script> <!-- Link to your JavaScript file -->
+    <script src="product.js"></script>
+    <footer style="background-color: #f1f1f1; padding: 20px; text-align: center; margin-top: 30px;">
+        <div class="footer-content">
+            <p>&copy; 2024 Shop Free. All rights reserved.</p>
+            <p>
+                <a href="#privacy-policy">Privacy Policy</a> | 
+                <a href="#terms-of-service">Terms of Service</a> | 
+                <a href="#contact">Contact Us</a>
+            </p>
+            <div class="social-media">
+                <a href="#facebook">Facebook</a> |
+                <a href="#twitter">Twitter</a> |
+                <a href="#instagram">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
